@@ -1,0 +1,12 @@
+langchain_google_genai
+langchain_core
+langgraph
+langchain_google_vertexai
+langchain_community
+langchain
+firebase_admin
+langchain_text_splitters
+google
+pydub
+flask
+flask_cors
