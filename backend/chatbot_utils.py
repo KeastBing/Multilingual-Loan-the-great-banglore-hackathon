@@ -26,10 +26,10 @@ os.environ["GOOGLE_API_KEY"] = Gemini_api #storing the API key
 
 
 # Initializing the Firebase DB
-cred = credentials.Certificate("apis\whatsapp-database-ca425-firebase-adminsdk-pyx9y-b4037c9675.json")
+cred = credentials.Certificate("FIREBASE API KEY")
 firebase_admin.initialize_app(cred)
 ref = db.reference(
-    'ChatHistory/', url='https://whatsapp-database-ca425-default-rtdb.asia-southeast1.firebasedatabase.app/'
+    'ChatHistory/', url='YOUR REALTIME DATABASE LINK'
 )
 
 ref.update({"THIS":"NO TOUCH"})
@@ -233,7 +233,7 @@ def get_response(session_id: str, input_message):
 
 def put_in_db(key,values):
     ref = db.reference(
-    'loan_moment/', url='https://whatsapp-database-ca425-default-rtdb.asia-southeast1.firebasedatabase.app/')
+    'loan_moment/', url='YOUR REALTIME DATABSE URL')
     ref.update({"DON:T":"REMOVE"})
     ref.update({key:values})
     return 0

@@ -8,7 +8,7 @@ import datetime
 def generate_audio_filepath(text, session_id: str, lang):
     url = "https://api.sarvam.ai/text-to-speech"
     headers = {
-        "api-subscription-key": "a2d6d5ce-0006-435d-a0a3-499930c87150",
+        "api-subscription-key": "SARVAM API KEY",
         "Content-Type": "application/json"
     }
    
