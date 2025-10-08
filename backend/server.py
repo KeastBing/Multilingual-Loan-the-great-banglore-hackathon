@@ -58,7 +58,7 @@ def speech_to_text_to_speech():
     mp3_filepath = os.path.join(UPLOAD_FOLDER, mp3_filename)
     audio_file.save(webm_filepath)
     
-    # Convert WebM to MP3 using ffmpeg
+
     try:
         subprocess.run(["ffmpeg", "-i", webm_filepath, "-q:a", "2", "-acodec", "libmp3lame", mp3_filepath], check=True)
     except subprocess.CalledProcessError as e:
