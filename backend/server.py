@@ -69,7 +69,7 @@ def speech_to_text_to_speech():
     user_message = transcription["transcript"]
     user_lang = transcription["lang_code"]
     
-    # Get chatbot response
+    
     if user_lang == "en-IN":
         bot_response = chatbot_utils.get_response(session_id, user_message)
         final_response = bot_response
