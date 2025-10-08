@@ -64,7 +64,7 @@ def speech_to_text_to_speech():
     except subprocess.CalledProcessError as e:
         return jsonify({"error": f"Audio conversion failed: {str(e)}"}), 500
     
-    # Process audio to text
+    
     transcription = speech_stuff.translate_audio(mp3_filepath)
     user_message = transcription["transcript"]
     user_lang = transcription["lang_code"]
